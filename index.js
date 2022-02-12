@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-require('././src/Database/Mongodb');
+require('./src/Database/Mongodb.js');
 
 require('dotenv').config();
 
@@ -12,7 +12,7 @@ app.use( express.urlencoded({ extended: false }) );
 
 
 // Routes
-app.use( require('././src/Routes/route') );
+app.use( require('./src/Routes/route') );
 
 
 // This folder will be Public
