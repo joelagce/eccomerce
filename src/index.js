@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-require('./Database/Mongodb');
+require('./DataBase/Mongodb');
 
 require('dotenv').config();
 
@@ -26,4 +26,3 @@ app.use( express.static( path.join( __dirname, 'Uploads/Categories' )));
 // Puerto - Listen 
 // PORT 7070 
 app.listen( process.env.PORT, () => console.log('Listen on port ' + process.env.PORT) );
-
