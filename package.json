@@ -4,7 +4,7 @@
   "description": "Flutter",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "author": "Frave Developer",
   "license": "ISC",
