@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-require('./Database/Mongodb.js');
+require('./Database/Mongodb');
 
 require('dotenv').config();
 
