@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://joelagce:reino1914@cluster0.roysc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO, {
     useUnifiedTopology: true,
     useNewUrlParser: true
 }).then( db => console.log('Mongodb is connnected'))
