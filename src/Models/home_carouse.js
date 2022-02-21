@@ -9,6 +9,10 @@ const CarouselSchema = new Schema({
     category:{
         type: String,
         required: true
+    },
+    category_id: {
+        type: Schema.Types.ObjectId,
+        ref: 'category'
     }
 });
 
