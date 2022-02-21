@@ -6,33 +6,23 @@ const AddhomeCarousel = async (req, res) => {
 
     await homeCarousel.insertMany([
         {
-            "image": "home-hogar-slide-1.jpg",
-            "category": "hogar"
+            "image": "airpos.jpeg",
+            "category": "phone"
         },
         {
-            "image": "home-games-slide-2.jpg",
-            "category": "Games"
+            "image": "privacy.jpg",
+            "category": "phone"
         },
         {
-            "image": "home-ropa-slide-3.jpg",
-            "category": "Ropa"
+            "image": "samsung.jpg",
+            "category": "phone"
         },
         {
-            "image": "home-tec-slide-4.jpg",
-            "category": "Tec"
-        },
-        {
-            "image": "home-entrena-slide-5.jpg",
-            "category": "Fitness"
-        },
-        {
-            "image": "home-tecnologia-slide-6.jpg",
-            "category": "Tecnologies"
-        },
-        {
-            "image": "home-free-slide-7.jpg",
-            "category": "Delivery Free"
+            "image": "samsunggalaxy.jpg",
+            "category": "phone"
         }
+       
+    
     ]);
 
     res.json({
@@ -45,105 +35,45 @@ const addCategoryStatic = async (req, res) => {
 
     await Category.insertMany([
         {
-            "category": "home",
-            "picture": "hogar-categories.svg"
+            "category": "Headphones",
+            "picture": "airpods3.png"
         },
         {
             "category": "Computing",
-            "picture": "ordenador-portatil.svg"
+            "picture": "surfacebook.png"
         },
         {
-            "category": "Home Appliances",
-            "picture": "electrodomestico.svg"
+            "category": "Smart home",
+            "picture": "philips.png"
         },
         {
             "category": "Sport and Fitness",
-            "picture": "fitness.svg"
+            "picture": "watch7.png"
         },
         {
-            "category": "Toys",
-            "picture": "juguetes.svg"
+            "category": "Phones",
+            "picture": "a70.png"
         },
         {
-            "category": "Belleza y Cuidado",
-            "picture": "belleza.svg"
+            "category": "Tablets",
+            "picture": "ipadair20.png"
         },
         {
-            "category": "Accesorios Vehiculo",
-            "picture": "coche.svg"
+            "category": "Drones",
+            "picture": "djipro.png"
         },
         {
-            "category": "Cell Phones",
-            "picture": "smartphone.svg"
+            "category": "Camera",
+            "picture": "a700sony.png"
         },
         {
-            "category": "Audio y Video",
-            "picture": "microfono.svg"
+            "category": "Watch",
+            "picture": "watch7.png"
         },
-        {
-            "category": "Clothing",
-            "picture": "camiseta.svg"
-        },
-        {
-            "category": "Autos, Motos",
-            "picture": "autos-motos.svg"
-        },
-        {
-            "category": "Jewels",
-            "picture": "joyas.svg"
-        },
-        {
-            "category": "Console and video games",
-            "picture": "videojuegos.svg"
-        },
-        {
-            "category": "Pets",
-            "picture": "animales.svg"
-        },
-        {
-            "category": "Camara",
-            "picture": "camaras.svg"
-        },
-        {
-            "category": "Oficinas",
-            "picture": "oficinas.svg"
-        },
-        {
-            "category": "Music and Movies",
-            "picture": "musica-pelicula.svg"
-        },
-        {
-            "category": "Health",
-            "picture": "salud.svg"
-        },
-        {
-            "category": "Babies",
-            "picture": "bebes.svg"
-        },
-        {
-            "category": "Tools",
-            "picture": "herramientas.svg"
-        },
-        {
-            "category": "Books and Papers",
-            "picture": "libros.svg"
-        },
-        {
-            "category": "Services",
-            "picture": "servicios.svg"
-        },
-        {
-            "category": "Regards",
-            "picture": "recuerdos.svg"
-        },
-        {
-            "category": "Electronics",
-            "picture": "electronica.svg"
-        },
-        {
-            "category": "Others",
-            "picture": "otros-app.svg"
-        }
+       
+       
+       
+
     ]);
 
     res.json({
@@ -164,17 +94,17 @@ const addProductsStatic = async ( req, res ) => {
             "stock" : 15,
             "price": 4890.90,
             "status": "active",
-            "picture": "Apple-iPhone-11-Pro-64-Gb.jpg",
+            "picture": "iphonemini.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Audifono Gamer G935 Lightspeed Wireless",
+            "nameProduct": "Audifonos Apple AirPods Pro",
             "description": "Entregamos Factura y/o Boleta, todos los precios incluyen IGV",
             "codeProduct": "0000002",
             "stock" : 10,
             "price": 619.00,
             "status": "active",
-            "picture": "Audifono-Gamer-G935-Lightspeed-Wireless.jpg",
+            "picture": "applepro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1c"
         },
         {
@@ -184,7 +114,7 @@ const addProductsStatic = async ( req, res ) => {
             "stock" : 10,
             "price": 1000.06,
             "status": "active",
-            "picture": "Audífonos-Inalámbricos-Con-Noise-Cancelling-Wh-1000xm4.jpg",
+            "picture": "sonyx4.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1c"
         },
         {
@@ -194,167 +124,167 @@ const addProductsStatic = async ( req, res ) => {
             "stock" : 15,
             "price": 1725.25,
             "status": "active",
-            "picture": "Drone-Dji-Mavic-2-Pro-Capacitación-Mtc.jpg",
+            "picture": "djimavic.png",
             "category_id" :"60ff4ea2071b3b2cb0951d2b"
         },
         {
-            "nameProduct": "Laptop Asus Vivobook 15",
-            "description": "LAPTOP ASUS VIVOBOOK SD512DA Ryzen 5 3500U Quad-Core 512GB SSD + Integrated AMD Radeon Vega 8 Graphics",
+            "nameProduct": "Laptop Macbook Pro 13 2021",
+            "description": "Laptop Macbook Pro 13 2021 is amazing laptop",
             "codeProduct": "0000005",
             "stock" : 14,
             "price": 3000,
             "status": "active",
-            "picture": "laptop-asus.jpg",
+            "picture": "macbook.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Laptop Asus Rog Zephirus G14",
-            "description": "AMD RYZEN 7-4800HS 2.9GHZ, 8GB DDR4, 512GB SSD, 14 FHD (1920x1080) 120HZ, NVIDIA GEFORCE GTX 1650 4GB, NO WEBCAM, BLUETOOTH, WINDOWS 10, COLOR ECLIPSE GREY, TECLADO EN INGLES",
+            "nameProduct": "Camera a70 sony",
+            "description": "is the best camera in the world",
             "codeProduct": "0000006",
             "stock" : 16,
             "price": 5952.00,
             "status": "active",
-            "picture": "Laptop-Asus-Rog-Zephirus-G14.jpg",
+            "picture": "a700sony.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Lentes De Realidad Virtual Vr Oculus Quest",
+            "nameProduct": "airpods 3",
             "description": "EN STOCK OCULUS QUEST 2!!! ENTREGA INMEDIATA, TIENDA FISICA, GARANTIA, COMPLETAMENTE SELLADO",
             "codeProduct": "0000007",
             "stock" : 20,
             "price": 2500.00,
             "status": "active",
-            "picture": "Lentes-De-Realidad-Virtual-Vr-Oculus-Quest.jpg",
+            "picture": "airpods3.png",
             "category_id" :"60ff4ea2071b3b2cb0951d2b"
         },
         {
-            "nameProduct": "Mochila Lona Canvas",
+            "nameProduct": "amazon watch",
             "description": "Mochila Hombre Lona Canvas Importada Vintage Bolso Maletin",
             "codeProduct": "0000008",
             "stock" : 11,
             "price": 500.00,
             "status": "active",
-            "picture": "Mochila-Hombre-Lona-Canvas-Importada-Vintage-Bolso-Maletin.jpg",
+            "picture": "amazon.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1d"
         },
         {
-            "nameProduct": "Mouse Logitech G Pro Wireless Hero 25k",
+            "nameProduct": "Dji gopro",
             "description": "Mouse-Logitech-G-Pro-Wireless-Hero-25k.jpg",
             "codeProduct": "0000009",
             "stock" : 12,
             "price": 832.00,
             "status": "active",
-            "picture": "Mouse-Logitech-G-Pro-Wireless-Hero-25k.jpg",
+            "picture": "djiprocam.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Samsung S21 Ultra 5G",
+            "nameProduct": "Samsung s22",
             "description": "Samsung-S21-Ultra-5g-256gb-12ram.jpg",
             "codeProduct": "0000010",
             "stock" : 22,
             "price": 5962.00,
             "status": "active",
-            "picture": "Samsung-S21-Ultra-5g-256gb-12ram.jpg",
+            "picture": "s22.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Tv Xiaomi 43 Ultra Hd Smart",
+            "nameProduct": "Philips hue",
             "description": "Tv Xiaomi 43 Ultra Hd Smart",
             "codeProduct": "0000011",
             "stock" : 6,
             "price": 3520.00,
             "status": "active",
-            "picture": "Tv-Xiaomi-43-Ultra-Hd-Smart.jpg",
+            "picture": "philips.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1c"
         },
         {
-            "nameProduct": "Laptop Lenovo 14 W Amd A6",
+            "nameProduct": "Surface Pro",
             "description": "Laptop-Lenovo-14-W-Amd-A6",
             "codeProduct": "0000012",
             "stock" : 11,
             "price": 1599.00,
             "status": "active",
-            "picture": "Laptop-Lenovo-14-W-Amd-A6.jpg",
+            "picture": "surcepro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Macbook Pro 13 Chip M1 Apple",
+            "nameProduct": "Surface book",
             "description": "Macbook-Pro-13-Chip-M1-Apple",
             "codeProduct": "0000013",
             "stock" : 10,
             "price": 6499.00,
             "status": "active",
-            "picture": "Macbook-Pro-13-Chip-M1-Apple.jpg",
+            "picture": "surfacebook.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Laptop Asus Zenbook 14",
+            "nameProduct": "Beats studio",
             "description": "Laptop-Asus-Zenbook-14",
             "codeProduct": "0000014",
             "stock" : 19,
             "price": 3499.00,
             "status": "active",
-            "picture": "Laptop-Asus-Zenbook-14.jpg",
+            "picture": "beatsstudio.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Laptop Lenovo Ideapadflex",
+            "nameProduct": "dji pro",
             "description": "Laptop-Lenovo-Ideapadflex",
             "codeProduct": "0000015",
             "stock" : 6,
             "price": 4599.00,
             "status": "active",
-            "picture": "Laptop-Lenovo-Ideapadflex.jpg",
+            "picture": "djipro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Laptop Asus Rog Strix G512li-bi7n10",
+            "nameProduct": "camera dji x4",
             "description": "Laptop-Asus-Rog-Strix-G512li-bi7n10",
             "codeProduct": "0000016",
             "stock" : 8,
             "price": 5059.00,
             "status": "active",
-            "picture": "Laptop-Asus-Rog-Strix-G512li-bi7n10.jpg",
+            "picture": "djix4.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Laptop Lenovo Celeron",
+            "nameProduct": "camera sony profesional videos",
             "description": "Laptop Lenovo Celeron",
             "codeProduct": "0000017",
             "stock" : 6,
             "price": 1059.00,
             "status": "active",
-            "picture": "Laptop-Lenovo-Celeron.jpg",
+            "picture": "sonypro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d15"
         },
         {
-            "nameProduct": "Apple iPhone 11 128gb",
+            "nameProduct": "ipad air 2020",
             "description": "Apple iPhone 11 128gb",
             "codeProduct": "0000018",
             "stock" : 18,
             "price": 3149.00,
             "status": "active",
-            "picture": "Apple-iPhone-11-128gb.jpg",
+            "picture": "ipadair20.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Samsung Galaxy A12",
+            "nameProduct": "ipad pro",
             "description": "Samsung Galaxy A12",
             "codeProduct": "0000019",
             "stock" : 15,
             "price": 658.00,
             "status": "active",
-            "picture": "Samsung-Galaxy-A12.jpg",
+            "picture": "ipadpro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Xiaomi Poco X3 Nfc",
+            "nameProduct": "headphones",
             "description": "Xiaomi Poco X3 Nfc",
             "codeProduct": "0000020",
             "stock" : 16,
             "price": 1169.00,
             "status": "active",
-            "picture": "Xiaomi-Poco-X3-Nfc.jpg",
+            "picture": "headpohnes.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
@@ -364,37 +294,37 @@ const addProductsStatic = async ( req, res ) => {
             "stock" : 17,
             "price": 5499.00,
             "status": "active",
-            "picture": "iPhone-12-Pro-Max.jpg",
+            "picture": "iphonemini.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Xiaomi Redmi Note 10",
+            "nameProduct": "iphone 13 pro max",
             "description": "Xiaomi Redmi Note 10",
             "codeProduct": "0000022",
             "stock" : 14,
             "price": 889.00,
             "status": "active",
-            "picture": "Xiaomi-Redmi-Note-10.jpg",
+            "picture": "iphonepro.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Samsung Galaxy A71",
+            "nameProduct": "watch se",
             "description": "Samsung Galaxy A71",
             "codeProduct": "0000023",
             "stock" : 14,
             "price": 1669.00,
             "status": "active",
-            "picture": "Samsung-Galaxy-A71.jpg",
+            "picture": "watchse.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         },
         {
-            "nameProduct": "Samsung Galaxy S20+",
-            "description": "Samsung Galaxy S20+",
+            "nameProduct": "apple watch s7",
+            "description": "this watch is very cool because it is very good",
             "codeProduct": "0000024",
             "stock" : 11,
             "price": 3399.00,
             "status": "active",
-            "picture": "Samsung-Galaxy-S20+.jpg",
+            "picture": "watch7.png",
             "category_id" :"60ff4ea2071b3b2cb0951d1b"
         }
     ]);

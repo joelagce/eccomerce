@@ -37,7 +37,7 @@ const LoginUsuario = async ( req, res = response ) => {
 
         res.json({
             resp: true,
-            msj : 'Welcome to Frave Shop',
+            msj : 'Welcome to Electronic Shop',
             users: { 'id': usersdb.person_id, 'email': usersdb.email, 'users' : usersdb.users, 'profile' : usersdb.image },
             token: token
         });
@@ -68,7 +68,7 @@ const RenweToken = async ( req, res = response ) => {
 
         res.json({
             resp: true,
-            msj : 'Welcome to Frave Shop',
+            msj : 'Welcome to Electronic Shop',
             users: { 'id': usersdb.person_id, 'email': usersdb.email, 'users' : usersdb.users, 'profile' : usersdb.image },
             token: token
         });
